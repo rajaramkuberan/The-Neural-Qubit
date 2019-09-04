@@ -3,7 +3,9 @@
 ## Overview
 
 This is the related code for the research paper & Youtube video by Siraj Raval titled "The Neural Qubit". This model is a hybrid classical-quantum classifier, with a number of input classical layers that control the parameters of an input layer in a two-mode continous-variable quantum neural network. The model is trained so that it outputs a photon in one mode for a genuine credit card transaction, and outputs a photon in the other mode for a fraudulent transaction. The classifier has
-an area under the ROC curve of 0.953, compared to the optimal value of 1. This is on a simulated quantum environment and classical algorithms can outperform it. I intuit that on a physical quantum computer, the ROC could outperform classical algorithms, but more research is needed to confirm that. 
+an area under the ROC curve of 0.953, compared to the optimal value of 1. This is on a simulated quantum environment and classical algorithms can outperform it. I intuit that on a physical quantum computer, the ROC could outperform classical algorithms, but more research is needed to confirm that. XanaduAI had a great proof of concept in this direction, I built off of their variational circuit code by modifying the fock basis truncation, adding an extra photonic quantum layer, and increasing the intial gate parameter seed.
+
+Full paper [here](https://sirajraval.com/wp-content/uploads/2019/09/The-Neural-Qubit.pdf)
 
 ## Python dependencies
 - Tensorflow 1.3
