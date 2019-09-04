@@ -42,6 +42,8 @@ Since the model is periodically saved during training, you can monitor progress 
 tensorboard --logdir=outputs/tensorboard/simulation_label
 ```
 
+<img align="center" src="https://github.com/XanaduAI/quantum-neural-networks/blob/master/static/fraud_detection.png" width=300px>
+
 #### Step 4 - Test the model
 
 First, edit `testing.py` to point to the simulation label and checkpoint of the model which is to be tested. These are specified under the variables `simulation_label` and `ckpt_val` in `testing.py`.
@@ -61,12 +63,7 @@ python3 roc.py
 ```
 which outputs the receiver operating characteristic (ROC) curve and confusion matrix for the optimal threshold probability.
 
-<img align="left" src="https://github.com/XanaduAI/quantum-neural-networks/blob/master/static/fraud_detection.png" width=300px>
 
 ## Credits
 
-XanaduAI! Keep pushing neural network theory into the thrilling world of quantum information processing. Also D-Wave, for believing in me. Dr. Matthew Fisher thank you for your work on quantum cogniton as well. Guillame Verdon, for being my Quantum advisor & friend at Google X. 
-
-
-
-# Fraud detection
+XanaduAI! Keep pushing neural network theory into the thrilling world of quantum information processing. Also D-Wave, for believing in me. Dr. Matthew Fisher thank you for your work on quantum cogniton as well. Max Tegmark, thank you for helping me learn about the arguments against quantum cognition. And Guillame Verdon, thank you for being my Quantum advisor & friend at Google X. 
