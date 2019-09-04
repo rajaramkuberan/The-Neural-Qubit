@@ -1,22 +1,6 @@
-# Copyright 2018 Xanadu Quantum Technologies Inc.
-
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-
-#     http://www.apache.org/licenses/LICENSE-2.0
-
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-"""Fraud detection fitting script"""
 import numpy as np
 import os
-
 import tensorflow as tf
-
 import strawberryfields as sf
 from strawberryfields.ops import Dgate, BSgate, Kgate, Sgate, Rgate
 
@@ -27,10 +11,10 @@ from strawberryfields.ops import Dgate, BSgate, Kgate, Sgate, Rgate
 # Two modes required: one for "genuine" transactions and one for "fradulent"
 mode_number = 2
 # Number of photonic quantum layers
-depth = 6
+depth = 7
 
 # Fock basis truncation
-cutoff = 10
+cutoff = 9
 # Number of batches in optimization
 reps = 10000
 
@@ -41,7 +25,7 @@ simulation_label = 1
 batch_size = 24
 
 # Random initialization of gate parameters
-sdev_photon = 0.1
+sdev_photon = 0.2
 sdev = 1
 
 # Variable clipping values
